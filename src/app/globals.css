@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .nav-item {
+        @apply px-4 py-1.5 font-semibold rounded-full text-sm text-white/70 hover:bg-white/10 text-white duration-300;
+    }
+}
