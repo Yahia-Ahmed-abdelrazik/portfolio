@@ -13,10 +13,10 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip ">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_40%,black_60%,black_70%,transparent)]">
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_40%,black_60%,black_70%,transparent)] pointer-events-none">
         {/* background image */}
         <div
-          className="absolute inset-0 -z-50 opacity-5 "
+          className=" absolute inset-0 -z-50 opacity-5 "
           style={{ backgroundImage: `url(${grainImage.src})` }}
         ></div>
         {/* rings */}
@@ -59,7 +59,7 @@ export const HeroSection = () => {
         </HeroOrbit>
       </div>
       {/*  */}
-      <div className="container">
+      <div className="container select-none">
         <div className="flex flex-col justify-center items-center">
           <Image
             src={memojiImage}
@@ -93,7 +93,7 @@ export const HeroSection = () => {
             <ArrowDown className="size-4" />
           </button>
 
-          <button className="inline-flex items-center  gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
+          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
             <span>👋</span>
             <span className="font-semibold">Let's Connect</span>
           </button>
