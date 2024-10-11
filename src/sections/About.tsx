@@ -57,7 +57,7 @@ const hobbies = [
 
 export const AboutSection = () => {
   return (
-    <div className="py-20 ">
+    <div className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -66,27 +66,27 @@ export const AboutSection = () => {
         />
 
         <div className="mt-20 flex flex-col gap-6">
-          <div className="md:grid md:grid-cols-5 md:gap-8">
-            <Card className="h-[320px] md:col-span-2">
+          <div className="grid grid-col-1  gap-8 md:grid-cols-5 lg:grid-cols-3">
+            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="My Reads"
                 description="Explore The books shaping my perspective."
               />
 
-              <div className="w-40 mx-auto mt-8">
+              <div className="w-40 mx-auto mt-2  md:mt-0">
                 <Image src={bookImage} alt="book" className="w-fit h-fit" />
               </div>
             </Card>
 
-            <Card className="h-[320px] p-0 md:col-span-3">
+            <Card className="h-[320px]  md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="My Toolbox"
-                className="px-6 pt-6"
+                className=""
                 description="Explore the technologies and tools I use to craft exceptional
                 digital experiences."
               />
 
-              <ToolboxItems items={toolboxItems} className="mt-6" />
+              <ToolboxItems items={toolboxItems} className="" />
               <ToolboxItems
                 items={toolboxItems}
                 className="mt-6"
@@ -95,8 +95,8 @@ export const AboutSection = () => {
             </Card>
           </div>
 
-          <div className="md:grid md:grid-cols-5 md:gap-8">
-            <Card className="h-[320px] p-0  flex flex-col md:col-span-3">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
+            <Card className="h-[320px] p-0  flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Beyond the Code"
                 description="Explore myintests and hobbis the digital realm"
@@ -121,7 +121,7 @@ export const AboutSection = () => {
                 ))}
               </div>
             </Card>
-            <Card className="h-[320px] p-0  relative md:col-span-2">
+            <Card className="h-[320px] p-0  relative md:col-span-2 lg:col-span-1">
               <Image
                 src={mapImage}
                 alt="map"
