@@ -1,22 +1,21 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
-
 const FooterLinks = [
   {
     title: "Linked In",
-    href: "#",
+    href: "https://www.linkedin.com/in/yehia-ahmed-687177260/",
   },
   {
-    title: "Instagram",
-    href: "#",
+    title: "Gmail",
+    href: "mailto:otakayahia@gmail.com",
   },
   {
-    title: "Twitter",
-    href: "#",
+    title: "Github",
+    href: "https://github.com/Yahia-Ahmed-abdelrazik",
   },
   {
     title: "WhatsApp",
-    href: "#",
+    href: "https://wa.me/201005116936",
   },
 ];
 export const Footer = () => {

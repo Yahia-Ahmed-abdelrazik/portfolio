@@ -12,7 +12,10 @@ import Image from "next/image";
 import { HeroOrbit } from "@/components/HeroOrbit";
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip ">
+    <div
+      id="home"
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip "
+    >
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_40%,black_60%,black_70%,transparent)] pointer-events-none">
         {/* background image */}
         <div
