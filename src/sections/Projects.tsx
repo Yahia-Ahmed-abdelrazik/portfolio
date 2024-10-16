@@ -1,3 +1,4 @@
+"use client";
 //images
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
@@ -10,6 +11,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 //
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 const portfolioProjects = [
   {
@@ -50,9 +52,41 @@ const portfolioProjects = [
   },
 ];
 
-export const ProjectsSection = () => {
+//
+interface ProjectsSectionProps {
+  setActiveSection: (section: string) => void;
+}
+
+export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
+  setActiveSection,
+}) => {
+  //to activate navbar on scroll
+  const inputRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (inputRef.current) {
+        let offset = inputRef.current.offsetTop;
+        let highth = inputRef.current.offsetHeight;
+        let scroll = window.scrollY;
+        // console.log("offset", offset, "highth", highth, "scroll", scroll);
+
+        if (scroll > offset && scroll < offset + highth ) {
+          // console.log("true");
+          setActiveSection("projects");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [setActiveSection]);
+
   return (
-    <section id="projects" className="pb-16 lg:py-24">
+    <section ref={inputRef} id="projects" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="Real-world projects"

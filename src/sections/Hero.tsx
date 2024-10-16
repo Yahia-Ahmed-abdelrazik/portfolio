@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 ////assets
 //images
@@ -10,9 +11,39 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 //
 import Image from "next/image";
 import { HeroOrbit } from "@/components/HeroOrbit";
-export const HeroSection = () => {
+import { useEffect, useRef } from "react";
+
+//
+interface HeroSectionProps {
+  setActiveSection: (section: string) => void;
+}
+export const HeroSection: React.FC<HeroSectionProps> = ({
+  setActiveSection,
+}) => {
+  //to activate navbar on scroll
+  const inputRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (inputRef.current) {
+        let offset = inputRef.current.offsetTop;
+        let highth = inputRef.current.offsetHeight;
+        let scroll = window.scrollY;
+        // console.log("offset", offset, "highth", highth, "scroll", scroll);
+        if (scroll > offset && scroll < offset + highth ) {
+          setActiveSection("home");
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [setActiveSection]);
+
   return (
     <div
+      ref={inputRef}
       id="home"
       className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip "
     >

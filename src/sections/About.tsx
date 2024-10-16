@@ -19,7 +19,7 @@ import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "./ToolboxItems";
 //
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const toolboxItems = [
   {
@@ -57,11 +57,38 @@ const hobbies = [
   { title: "Readind", icon: "📚", left: "45%", top: "70%" },
 ];
 
-export const AboutSection = () => {
+//
+interface AboutSectionProps {
+  setActiveSection: (section: string) => void;
+}
+
+export const AboutSection: React.FC<AboutSectionProps> = ({
+  setActiveSection,
+}) => {
   const constraintsRef = useRef(null);
+  const aboutSectionRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (aboutSectionRef.current) {
+        let offset = aboutSectionRef.current.offsetTop;
+        let highth = aboutSectionRef.current.offsetHeight;
+        let scroll = window.scrollY;
+        // console.log("offset", offset, "highth", highth, "scroll", scroll);
+
+        if (scroll > offset && scroll < offset + highth) {
+          // console.log("true");
+          setActiveSection("about");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [setActiveSection]);
 
   return (
-    <div id="about" className="py-20 lg:py-28">
+    <div ref={aboutSectionRef} id="about" className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
