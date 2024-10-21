@@ -12,7 +12,10 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  description: "My portfolio built with Next.js and Tailwind CSS",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

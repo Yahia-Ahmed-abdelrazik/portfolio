@@ -1,8 +1,12 @@
 "use client";
 //images
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import gemini from "@/assets/images/gemini.png";
+import netflex from "@/assets/images/netflex.png";
+import monster from "@/assets/images/monster.png";
+import pizza from "@/assets/images/pizza.png";
+import ecommerse from "@/assets/images/ecommerse.png";
+import quiz from "@/assets/images/quiz.png";
+import greenWorld from "@/assets/images/greenWorld.png";
 //icons
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -15,40 +19,88 @@ import { useEffect, useRef } from "react";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Gemini",
+    year: "2024",
+    title: "Gemini Ai Chat",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://yahia-gemini-clone.surge.sh/",
+    image: gemini,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Netflex",
+    year: "2024",
+    title: "Netflex Movie App",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7239938361870749696/",
+    image: netflex,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Monster",
+    year: "2024",
+    title: "Monster Landing Page",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://yahia-ahmed-abdelrazik.github.io/landing-monister/",
+    image: monster,
+  },
+  {
+    company: "pizza",
+    year: "2024",
+    title: "Pizza Menu",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://pizza-menu-yahia.surge.sh/",
+    image: pizza,
+  },
+  {
+    company: "ecommerse",
+    year: "2024",
+    title: "Ecommerse App Stor",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://ecommerce-yahia-ahmed.surge.sh/",
+    image: ecommerse,
+  },
+  {
+    company: "Quiz",
+    year: "2024",
+    title: "Quiz App",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://github.com/Yahia-Ahmed-abdelrazik/Quiz",
+    image: quiz,
+  },
+  {
+    company: "greenWorld",
+    year: "2024",
+    title: "GreenWorld",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://github.com/Yahia-Ahmed-abdelrazik/Quiz",
+    image: greenWorld,
   },
 ];
 
@@ -71,7 +123,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
         let scroll = window.scrollY;
         // console.log("offset", offset, "highth", highth, "scroll", scroll);
 
-        if (scroll > offset && scroll < offset + highth ) {
+        if (scroll > offset - 50 && scroll < offset + highth) {
           // console.log("true");
           setActiveSection("projects");
         }
@@ -137,7 +189,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-tl-3xl"
                   />
                 </div>
               </div>

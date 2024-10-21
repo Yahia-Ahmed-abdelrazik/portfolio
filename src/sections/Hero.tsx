@@ -30,7 +30,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         let highth = inputRef.current.offsetHeight;
         let scroll = window.scrollY;
         // console.log("offset", offset, "highth", highth, "scroll", scroll);
-        if (scroll > offset && scroll < offset + highth ) {
+        if (scroll > offset && scroll < offset + highth) {
           setActiveSection("home");
         }
       }
@@ -173,14 +173,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         <div className="flex flex-col md:flex-row  gap-4 justify-center items-center mt-8">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <button
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
+            onClick={() => window.scrollTo({ top: 800, behavior: "smooth" })}
+          >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
 
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
+          <button
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl"
+            onClick={() => window.scrollTo({ top: 5000, behavior: "smooth" })}
+          >
             <span>👋</span>
-            <span className="font-semibold">Let's Connect</span>
+            <span className="font-semibold ">Let's Connect</span>
           </button>
         </div>
       </div>

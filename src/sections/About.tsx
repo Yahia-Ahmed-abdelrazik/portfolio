@@ -76,7 +76,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         let scroll = window.scrollY;
         // console.log("offset", offset, "highth", highth, "scroll", scroll);
 
-        if (scroll > offset && scroll < offset + highth) {
+        if (scroll >= offset - 50 && scroll < offset + highth) {
           // console.log("true");
           setActiveSection("about");
         }

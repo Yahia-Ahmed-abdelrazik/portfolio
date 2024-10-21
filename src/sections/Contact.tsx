@@ -19,10 +19,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         let offset = inputRef.current.offsetTop;
         let highth = inputRef.current.offsetHeight;
         let scroll = window.scrollY;
-        console.log("offset", offset, "highth", highth, "scroll", scroll);
-        if (scroll > offset - 500 && scroll < offset + highth) {
+        // console.log("offset", offset, "highth", highth, "scroll", scroll);
+        if (scroll >= offset - 500 && scroll < offset + highth) {
           setActiveSection("contact");
-          console.log("true");
+          // console.log("true");
         }
       }
     };
