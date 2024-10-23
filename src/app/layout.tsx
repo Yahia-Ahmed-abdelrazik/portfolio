@@ -11,10 +11,10 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Yahia Ahmed",
   description: "My portfolio built with Next.js and Tailwind CSS",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/memoji-computer.png",
   },
 };
 
