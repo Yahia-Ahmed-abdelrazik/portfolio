@@ -99,7 +99,7 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://github.com/Yahia-Ahmed-abdelrazik/Quiz",
+    link: "https://github.com/Yahia-Ahmed-abdelrazik/summer-training-front-end/tree/main/week%20one/task1",
     image: greenWorld,
   },
 ];
