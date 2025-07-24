@@ -10,7 +10,7 @@ import greenWorld from "@/assets/images/greenWorld.png";
 import ECommerce from "@/assets/images/ECommerce.png";
 import shoppingEcommerce from "@/assets/images/shoppingEcommerce.png";
 import todo from "@/assets/images/todo.png";
-import tabeebak from "@/assets/images/tabeebak.png";
+import tabeebak from "@/assets/images/tabeebak.jpg";
 
 //icons
 import CheckIcon from "@/assets/icons/check-circle.svg";
