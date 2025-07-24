@@ -51,16 +51,16 @@ const portfolioProjects = [
     { title: "Enabled smooth user experience across all devices" },
   ],
   link: "https://react-e-commerce-ochre.vercel.app/",
-  image: ecommerse,
+  image: E-Commerce,
 },
   {
     company: "Monster",
     year: "2024",
     title: "Monster Landing Page",
-    results: [
-    { title: "Developed a dynamic movie browser using TMDb API" },
-    { title: "Implemented responsive design with smooth navigation" },
-    { title: "Integrated features like search, favorites, and detail pages" },
+  results: [
+    { title: "Built a static landing page using HTML, CSS, and JavaScript" },
+    { title: "Designed a clean and attractive layout to showcase the product" },
+    { title: "Ensured responsive design for mobile and desktop devices" },
   ],
     link: "https://yahia-ahmed-abdelrazik.github.io/landing-monister/",
     image: monster,
