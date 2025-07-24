@@ -7,6 +7,7 @@ import pizza from "@/assets/images/pizza.png";
 import ecommerse from "@/assets/images/ecommerse.png";
 import quiz from "@/assets/images/quiz.png";
 import greenWorld from "@/assets/images/greenWorld.png";
+import ECommerce from "@/assets/images/ECommerce.png";
 //icons
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
