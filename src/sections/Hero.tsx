@@ -183,7 +183,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           <button
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl"
-            onClick={() => window.scrollTo({ top: 5000, behavior: "smooth" })}
+            onClick={() => window.scrollTo({ 
+  top: document.body.scrollHeight - 100, 
+  behavior: "smooth" 
+})}
           >
             <span>👋</span>
             <span className="font-semibold ">Let's Connect</span>
