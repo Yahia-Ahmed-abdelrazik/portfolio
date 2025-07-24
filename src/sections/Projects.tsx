@@ -34,14 +34,25 @@ const portfolioProjects = [
     company: "Netflex",
     year: "2024",
     title: "Netflex Movie App",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
+     results: [
+    { title: "Developed a dynamic movie browser using TMDb API" },
+    { title: "Implemented responsive design with smooth navigation" },
+    { title: "Integrated features like search, favorites, and detail pages" },
+  ],
     link: "https://netflix-nine-alpha.vercel.app/",
     image: netflex,
-  },
+  },{
+  company: "E-commerce",
+  year: "2025",
+  title: "Modern E-commerce Storefront App",
+  results: [
+    { title: "Designed a clean and responsive user interface" },
+    { title: "Implemented product listing with cart functionality" },
+    { title: "Enabled smooth user experience across all devices" },
+  ],
+  link: "https://react-e-commerce-ochre.vercel.app/",
+  image: ecommerse,
+},
   {
     company: "Monster",
     year: "2024",
