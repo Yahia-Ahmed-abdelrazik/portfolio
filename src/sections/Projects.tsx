@@ -51,7 +51,7 @@ const portfolioProjects = [
     { title: "Enabled smooth user experience across all devices" },
   ],
   link: "https://react-e-commerce-ochre.vercel.app/",
-  image: E-Commerce,
+  image: ECommerce,
 },
   {
     company: "Monster",
