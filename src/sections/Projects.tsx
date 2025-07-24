@@ -8,6 +8,7 @@ import ecommerse from "@/assets/images/ecommerse.png";
 import quiz from "@/assets/images/quiz.png";
 import greenWorld from "@/assets/images/greenWorld.png";
 import ECommerce from "@/assets/images/ECommerce.png";
+import shoppingEcommerce from "@/assets/images/shoppingEcommerce.png";
 //icons
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -30,10 +31,21 @@ const portfolioProjects = [
 ],
     link: "https://yahia-gemini-clone.surge.sh/",
     image: gemini,
-  },
+  },{
+  company: "E-commerce",
+  year: "2024",
+  title: "React E-commerce Shopping App",
+  results: [
+    { title: "Developed a dynamic shopping interface using React components" },
+    { title: "Implemented product listing, cart functionality, and responsive design" },
+    { title: "Optimized user interactions for smooth and fast performance" },
+  ],
+  link: "https://shopping-e-commerce-sigma.vercel.app/",
+  image: shoppingEcommerce,
+},
   {
     company: "Netflex",
-    year: "2024",
+    year: "2025",
     title: "Netflex Movie App",
      results: [
     { title: "Developed a dynamic movie browser using TMDb API" },
@@ -70,11 +82,11 @@ const portfolioProjects = [
     company: "pizza",
     year: "2024",
     title: "Pizza Menu",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
+   results: [
+    { title: "Developed a single-page menu interface using React" },
+    { title: "Displayed pizza items with a clean and responsive layout" },
+    { title: "Used reusable components for maintainable code structure" },
+  ],
     link: "https://pizza-menu-yahia.surge.sh/",
     image: pizza,
   },
@@ -83,24 +95,12 @@ const portfolioProjects = [
     year: "2024",
     title: "Ecommerse App Stor",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
+    { title: "Built a multi-section static e-commerce page without frameworks" },
+    { title: "Styled a modern and responsive layout using pure CSS" },
+    { title: "Implemented basic product display with interactive UI elements" },
+  ],
     link: "https://ecommerce-yahia-ahmed.surge.sh/",
     image: ecommerse,
-  },
-  {
-    company: "Quiz",
-    year: "2024",
-    title: "Quiz App",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://github.com/Yahia-Ahmed-abdelrazik/Quiz",
-    image: quiz,
   },
   {
     company: "greenWorld",
