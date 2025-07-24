@@ -127,6 +127,9 @@ const portfolioProjects = [
   link: "https://to-do-list-rose-alpha-23.vercel.app/",
   image: todo,
 },
+];
+/*
+
   {
     company: "greenWorld",
     year: "2024",
@@ -139,7 +142,7 @@ const portfolioProjects = [
     link: "https://github.com/Yahia-Ahmed-abdelrazik/summer-training-front-end/tree/main/week%20one/task1",
     image: greenWorld,
   },
-];
+*/
 
 //
 interface ProjectsSectionProps {
