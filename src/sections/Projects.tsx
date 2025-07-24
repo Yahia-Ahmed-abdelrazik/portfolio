@@ -9,6 +9,8 @@ import quiz from "@/assets/images/quiz.png";
 import greenWorld from "@/assets/images/greenWorld.png";
 import ECommerce from "@/assets/images/ECommerce.png";
 import shoppingEcommerce from "@/assets/images/shoppingEcommerce.png";
+import todo from "@/assets/images/todo.png";
+
 //icons
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -33,7 +35,7 @@ const portfolioProjects = [
     image: gemini,
   },{
   company: "E-commerce",
-  year: "2024",
+  year: "2025",
   title: "React E-commerce Shopping App",
   results: [
     { title: "Developed a dynamic shopping interface using React components" },
@@ -101,7 +103,18 @@ const portfolioProjects = [
   ],
     link: "https://ecommerce-yahia-ahmed.surge.sh/",
     image: ecommerse,
-  },
+  },{
+  company: "To-Do App",
+  year: "2024",
+  title: "React To-Do List Application",
+  results: [
+    { title: "Built a responsive task management interface using React" },
+    { title: "Enabled adding, deleting, and marking tasks as complete" },
+    { title: "Used localStorage to persist tasks between sessions" },
+  ],
+  link: "https://to-do-list-rose-alpha-23.vercel.app/",
+  image: todo,
+},
   {
     company: "greenWorld",
     year: "2024",
