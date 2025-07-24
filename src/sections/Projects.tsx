@@ -36,7 +36,7 @@ const portfolioProjects = [
     image: gemini,
   },{
   company: "Tabeebak",
-  year: "2024",
+  year: "2025",
   title: "Full-Stack Doctor Appointment Platform",
   results: [
     { title: "Developed user and doctor dashboards with role-based access control" },
