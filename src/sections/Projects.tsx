@@ -10,6 +10,7 @@ import greenWorld from "@/assets/images/greenWorld.png";
 import ECommerce from "@/assets/images/ECommerce.png";
 import shoppingEcommerce from "@/assets/images/shoppingEcommerce.png";
 import todo from "@/assets/images/todo.png";
+import tabeebak from "@/assets/images/tabeebak.png";
 
 //icons
 import CheckIcon from "@/assets/icons/check-circle.svg";
@@ -34,6 +35,17 @@ const portfolioProjects = [
     link: "https://yahia-gemini-clone.surge.sh/",
     image: gemini,
   },{
+  company: "Tabeebak",
+  year: "2024",
+  title: "Full-Stack Doctor Appointment Platform",
+  results: [
+    { title: "Developed user and doctor dashboards with role-based access control" },
+    { title: "Implemented secure authentication and authorization using JWT" },
+    { title: "Built appointment booking system with MongoDB and Express.js backend" },
+  ],
+  link: "https://github.com/Yahia-Ahmed-abdelrazik/Tabeebak",
+  image: tabeebak,
+},{
   company: "E-commerce",
   year: "2025",
   title: "React E-commerce Shopping App",
