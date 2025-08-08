@@ -32,7 +32,7 @@ const portfolioProjects = [
     { title: "Implemented secure authentication and authorization using JWT" },
     { title: "Built appointment booking system with MongoDB and Express.js backend" },
   ],
-  link: "https://admin-tabeebak.vercel.app/doctor-list",
+  link: "https://frontend-tabeebak.vercel.app/",
   image: tabeebak,
 },
   {
