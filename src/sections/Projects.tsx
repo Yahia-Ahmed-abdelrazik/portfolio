@@ -219,8 +219,8 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
-                    <button className="bg-white text-gray-950 w-full md:w-auto px-6 rounded-xl h-12 font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                  <a href={project.link} target="_blank" >
+                    <button  className="bg-white text-gray-950 w-full md:w-auto px-6 rounded-xl h-12 font-semibold inline-flex items-center justify-center gap-2 mt-8">
                       <span>Visit Live Site</span>
                       <ArrowUpRightIcon className="size-5" />
                     </button>
